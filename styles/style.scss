@@ -1,0 +1,208 @@
+@font-face
+{
+	font-family: 'social';
+	font-weight: normal;
+	font-style: normal;
+
+	src: url('fonts/social.eot?84141987');
+	src: url('fonts/social.eot?84141987#iefix') format('embedded-opentype'),
+	url('fonts/social.woff?84141987') format('woff'),
+	url('fonts/social.ttf?84141987') format('truetype'),
+	url('fonts/social.svg?84141987#social') format('svg');
+}
+
+$fadedLink: rgb(135,112,154);
+$link: rgb(71,121,174);
+$linkHover: rgb(126,181,229);
+$black: rgb(75,88,102);
+$header: rgb(85,98,112);
+$backgroundURL: url('images/seamless_paper_texture.png');
+$break-hand: 380px;
+$break-small: 45em;
+
+@mixin respond-to ( $media )
+{
+	@if $media == small-handhelds { @media only screen and (max-width: $break-hand) { @content; }}
+	@else if $media == handhelds { @media only screen and (min-width: $break-hand+1) and (max-width: $break-small) { @content; }}
+	@else if $media == screens { @media only screen and (min-width: $break-small + 1) { @content; }}
+}
+
+@mixin keyframes($animation-name)
+{
+	@-webkit-keyframes #{$animation-name}
+	{
+		@content;
+	}
+	@-moz-keyframes #{$animation-name}
+	{
+		@content;
+	}
+	@-ms-keyframes #{$animation-name}
+	{
+		@content;
+	}
+	@-o-keyframes #{$animation-name}
+	{
+		@content;
+	}
+	@keyframes #{$animation-name}
+	{
+		@content;
+	}
+}
+
+
+@mixin animation($str)
+{
+	-webkit-animation: #{$str};
+	   -moz-animation: #{$str};
+	    -ms-animation: #{$str};
+	     -o-animation: #{$str};
+	        animation: #{$str};
+}
+
+
+@include keyframes(wave) {
+  0%
+  {
+  	filter: brightness(100%) hue-rotate(0deg);
+  }
+  90%
+  {
+  	filter: brightness(100%) hue-rotate(0deg);
+  	animation-timing-function: ease-in-out;
+  }
+  100%
+  {
+  	filter: brightness(150%) hue-rotate(180deg);
+  }
+}
+
+h1, h2, h3, h4, h5, ol, ul, dd, dt, dl, li, blockquote
+{
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.hidden
+{
+	display: none;
+}
+
+body
+{
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+
+	margin: 0;
+
+	word-wrap: break-word;
+
+	color: $black;
+	background: linear-gradient(to right, rgba(255,255,255,.5), rgba(255,255,255,.9) 2em,rgba(255,255,255,.9) 37.5em,rgba(255,255,255,.8) 45em), $backgroundURL;
+
+	-webkit-font-smoothing: antialiased;
+	font-display: optional;
+	text-rendering: optimizeLegibility;
+	font-variant-caps: normal;
+
+	@include respond-to(small-handhelds)
+	{
+		font-size: 14px;
+
+		color: black;
+	}
+	@include respond-to(handhelds)
+	{
+		font-size: 16px;
+
+		color: black;
+	}
+}
+
+a
+{
+	text-decoration: none;
+
+	color: $link;
+
+	&:hover
+	{
+		text-decoration: underline;
+
+		color: $linkHover;
+	}
+}
+
+header
+{
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	padding-right: 1.5em;
+
+	border-bottom: solid 1px #dddddd;
+	background: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.95) 2.25em,rgba(255,255,255,.95) 37.5em,rgba(255,255,255,.7) 45em);
+
+	@include respond-to(small-handhelds)
+	{
+		padding-right: 1em;
+	}
+	@include respond-to(handhelds)
+	{
+		padding-right: 1.25em;
+	}
+
+	h1
+	{
+
+	}
+
+	a.social
+	{
+		font-family: 'social';
+		font-size: 1.33em;
+		line-height: 2.33em;
+
+		float: right;
+
+		user-select: none;
+
+		@include respond-to(small-handhelds)
+		{
+			font-size: 1.25em;
+			line-height: 2.46em;
+		}
+		@include respond-to(handhelds)
+		{
+			font-size: 1.25em;
+			line-height: 2.46em;
+		}
+
+		span
+		{
+			display: none;
+		}
+
+		&:hover
+		{
+			color: $linkHover;
+		}
+	}
+}
+
+#documentation
+{
+	width: 37.5em;
+	max-width: 100%;
+	padding-bottom: 4em;
+
+}

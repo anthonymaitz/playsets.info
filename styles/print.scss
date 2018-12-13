@@ -1,0 +1,44 @@
+@import 'style.scss';
+
+a{
+	color: rgb(31,81,134) !important;
+	}
+
+#portfolio *
+{
+	display: none;
+}
+
+body
+{
+	background: none;
+	font-size: 14px;
+}
+
+header
+{
+	border: none;
+	position: relative;
+
+	.social
+	{
+		display:none;
+	}
+
+	margin-bottom: none;
+
+	background: none;
+}
+
+section
+{
+	margin-top: -1em;
+}
+
+h2, h3 {
+  page-break-after: avoid;
+}
+
+pre, ul, a {
+  page-break-inside: avoid;
+}
