@@ -8,23 +8,37 @@
 		<link rel="stylesheet" href="styles/style.css" media="screen" />
 	</head>
 	<body>
-		<header>
+			<label for="whatsnewnav"><span>What's new</span></label>
+			<input type=radio id="whatsnewnav" checked name="group">
+
+			<label for="documentationnav"><span>Documentation</span></label>
+			<input type=radio id="documentationnav" name="group">
+
+			<label for="privacynav"><span>Privacy</span></label>
+			<input type=radio id="privacynav" name="group">
+
+			<label for="closex"><span>X</span></label>
+			<input type=radio id="closex" name="group">
+
+		<section id="whatsnew">
+		<!-- @import 'whatsnew.html' -->
+		</section>
+		<section id="documentation">
+			<header>
 			<a href="#tokens">Tokens</a>
 			<a href="#buildertools">Builder Tools</a>
 			<a href="#maps">Maps</a>
 			<a href="#creatingacampaign">Creating A Campaign</a>
 			<a href="#runningagame">Running A Game</a>
 			<a href="#diceroller">Dice Roller</a>
-
-			<a href="#privacy">Privacy</a>
-		</header>
-		<section>
-			<article id="documentation">
-			<!-- @import 'documentation.html' -->
-			</article>
-			<article id="privacy">
-			<!-- @import 'privacy.html' -->
-			</article>
-	</section>
+			</header>
+		<!-- @import 'documentation.html' -->
+		</section>
+		<section id="privacy">
+			<header>
+				<a href="#analytics">Analytics</a>
+			</header>
+		<!-- @import 'privacy.html' -->
+		</section>
 </body>
 </html>

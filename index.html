@@ -4,229 +4,241 @@
 		<meta charset="utf-8" />
 		<title>Playsets Info</title>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="//brick.freetls.fastly.net/Libre+Caslon+Text:400,700,400i">
-		<link rel="stylesheet" href="styles/style.css" media="screen" />
+		<link rel="stylesheet" href="//brick.freetls.fastly.net/Libre+Caslon+Text:400,700,400i?ckcachebust=566459155">
+		<link rel="stylesheet" href="styles/style.css?ckcachebust=55c3598821dc452bc83f9ac9272798a1" media="screen" />
 	</head>
 	<body>
-		<header>
+			<label for="whatsnewnav"><span>What's new</span></label>
+			<input type=radio id="whatsnewnav" checked name="group">
+
+			<label for="documentationnav"><span>Documentation</span></label>
+			<input type=radio id="documentationnav" name="group">
+
+			<label for="privacynav"><span>Privacy</span></label>
+			<input type=radio id="privacynav" name="group">
+
+			<label for="closex"><span>X</span></label>
+			<input type=radio id="closex" name="group">
+
+		<section id="whatsnew">
+		<h2 id="whatsnewin1.9">What&#8217;s new in 1.9</h2>
+		
+		<h3 id="newfeature-builderroofs">New Feature - Builder Roofs</h3>
+		
+		<p>The roofing tool will automatically recognize new buildings made with the “Room” tool. Look for the pyramid to get started.</p>
+		
+		<h3 id="newfeature-diceroller">New Feature - Dice Roller</h3>
+		
+		<p>Attach rolls to tokens, add multipliers, and hold a roll to build suspense. Easy to use, expressive dice rolling.</p>
+		
+		<h3 id="newbuildertheme-sci-fi">New Builder Theme - Sci-Fi</h3>
+		
+		<p>Gizmos, gadgets galore for adventures steam-powered and extraterrestrial. New walls, tiles, roofs and props.</p>
+		
+		<h3 id="additionalimprovements">Additional Improvements</h3>
+		
+		<ul>
+		<li>Added additional colors to the token builder.</li>
+		<li>Fullscreen and windowed mode will behave much better.</li>
+		</ul>
+		
+		</section>
+		<section id="documentation">
+			<header>
 			<a href="#tokens">Tokens</a>
 			<a href="#buildertools">Builder Tools</a>
 			<a href="#maps">Maps</a>
 			<a href="#creatingacampaign">Creating A Campaign</a>
 			<a href="#runningagame">Running A Game</a>
 			<a href="#diceroller">Dice Roller</a>
-
-			<a href="#privacy">Privacy</a>
-		</header>
-		<section>
-			<article id="documentation">
-			<!DOCTYPE html>
-			<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-			<head>
-				<meta charset="utf-8"/>
-			</head>
-			<body>
-			
-			<h2 id="thejumpinn">The Jump Inn</h2>
-			
-			<p>The main menu is also a map, the Jump Inn! From here you can create a campaign or join a session in progress with a story code shared with you. You can play around and destroy the map, attack the villagers, and get some practice with playsets. The Jump Inn will reset the next time you load it.</p>
-			
-			<blockquote>
-			<p>Tokens you create and save in the Jump Inn are available in the token select menu.</p>
-			</blockquote>
-			
-			<h2 id="tokens">Tokens</h2>
-			
-			<h3 id="tokenbasics">Token Basics</h3>
-			
-			<h4 id="addingandremovingtokens">Adding and Removing tokens</h4>
-			
-			<p>Click and hold anywhere on a map to place a token. You can try this right on the main menu, which is great place to look through tokens or build your own without the need to create a campaign and map.</p>
-			
-			<h4 id="movement">Movement</h4>
-			
-			<p>Tokens leave a ghost behind when moving, allowing you to count squares more easily.</p>
-			
-			<p>Double tapping a token now gives it a wobble so people who aren’t in the same room know exactly which spider is about to leap on their face.</p>
-			
-			<p>If multiple tokens are in the same square you can toggle between them using the LAYER BUTTON.</p>
-			
-			<blockquote>
-			<p>Characters can jump inside of wells using the layer button.</p>
-			</blockquote>
-			
-			<h4 id="emotes">Emotes</h4>
-			
-			<h4 id="statuseffects">Status Effects</h4>
-			
-			<h4 id="actions">Actions</h4>
-			
-			<p>Actions are ongoing effects and animations that you can apply to your tokens. They are accessible in the token menu. Dance, sleep, etc to your token’s heart’s content.</p>
-			
-			<h4 id="notes">Notes</h4>
-			
-			<p>Notes can be seen by all players as a text box above the token. It can also not be seen by all players, if you hide it.</p>
-			
-			<p>Notes will fade behind status effects and will occasionally come to the front for readability.</p>
-			
-			<h4 id="props">Props</h4>
-			
-			<p>Some tokens are special. Those tokens are props. They have a lightbulb which lets you change the state of the prop.</p>
-			
-			<p>You can light campfires and torches by placing fire on top of them.</p>
-			
-			<h4 id="traps">Traps</h4>
-			
-			<p>Traps unhide and activate when tokens are placed on top of them.</p>
-			
-			<h3 id="advancedfeatures">Advanced Features</h3>
-			
-			<h4 id="swapping">Swapping</h4>
-			
-			<p>You can now swap tokens from the advanced token menu (hold down on the token for 2 seconds) Useful for shape shifters or hex spells.</p>
-			
-			<h4 id="editingprops">Editing (Props)</h4>
-			
-			<h4 id="hidingtokens">Hiding Tokens</h4>
-			
-			<p>Tokens can be hidden from other players. This is useful for hiding chests and other surprises good and bad.</p>
-			
-			<p>Tokens placed by the story-teller (including hidden tokens) do not cause transparency (for players). This will allow you to hide chests and place tokens in houses and caves without spoiling the surprise. (or having to unhide every token)</p>
-			
-			<h4 id="favoritingtokens">Favoriting Tokens</h4>
-			
-			<h3 id="tokenbuilder">Token Builder</h3>
-			
-			<p>Sometimes our great premade tokens might not be exactly what you are looking for. Maybe you just want more NPCs who aren’t wielding swords or giant cleavers. Maybe your elf draws his power from his majestic hair, but it MUST be purple or else you lose that +2 modifier on your roll. Whatever your reason, you have the power. You can build your own tokens by selecting from faces, hair, ears, armor, main-hand, off-hands, hats and bases all with a wide pallet of colors. With plans for regular updates to the available styles and equipment prepare to see a wider array of faces in playsets than ever before</p>
-			
-			<h3 id="customarttokens">Custom Art Tokens</h3>
-			
-			<h3 id="tokengrouping">Token Grouping</h3>
-			
-			<p>The grouping tool is a great way to hide and move multiple tokens at once.</p>
-			
-			<h2 id="buildertools">Builder tools</h2>
-			
-			<p>Creating a world map is one of the most rewarding parts of building your own campaign. Playsets will help you make a beautiful map, and you can mark important spots with scaled down representations of all of our pre built maps.</p>
-			
-			<p>We have a suite of BUILDER TOOLS as well as hundreds of props to help you make something amazing in a matter minutes, or hours, or weeks if you love to tinker.</p>
-			
-			<h3 id="roomtool">Room tool</h3>
-			
-			<h4 id="buildingandmodifying">Building and modifying</h4>
-			
-			<h5 id="undoredo">Undo / Redo</h5>
-			
-			<h5 id="lock">Lock</h5>
-			
-			<h5 id="circleandstamptools">Circle and Stamp tools</h5>
-			
-			<h4 id="roofs">Roofs</h4>
-			
-			<p>The roofing tool will automatically recognize new buildings made with the “Room” tool. Look for the pyramid to get started.</p>
-			
-			<h4 id="worldmaps">World Maps</h4>
-			
-			<h3 id="builderprops">Builder Props</h3>
-			
-			<h4 id="addingprops">Adding Props</h4>
-			
-			<h4 id="interactivepropstraps">Interactive Props + Traps</h4>
-			
-			<h2 id="maps">Maps</h2>
-			
-			<h3 id="panningandzooming">Panning and Zooming</h3>
-			
-			<p>You can scroll to zoom in for a better view or out to move around more easily.</p>
-			
-			<h3 id="maphighlighting">Map Highlighting</h3>
-			
-			<p>Double tap to highlight a specific square to your group.</p>
-			
-			<h3 id="weather">Weather</h3>
-			
-			<p>Storytellers can set the weather in the scene during gameplay and can save a weather effect when creating campaigns.</p>
-			
-			<h3 id="levels">Levels</h3>
-			
-			<h4 id="movingbetweenlevels">Moving between levels</h4>
-			
-			<h4 id="buildingonlevels">Building on levels</h4>
-			
-			<h4 id="levelbackgrounds">Level backgrounds</h4>
-			
-			<h4 id="levelsingameplay">Levels in game play</h4>
-			
-			<h2 id="creatingacampaign">Creating a campaign</h2>
-			
-			<h3 id="campaignview">Campaign View</h3>
-			
-			<p>The CAMPAIGN VIEW is where you manage and access the many maps associated with a campaign. You can have an unlimited number of campaigns, and as many maps as you can fit in the campaign view. When you are inside of a map you can switch to other maps in the campaign from the SCENE OPTIONS MENU.</p>
-			
-			<h4 id="addingandremovingmaps">Adding and Removing Maps</h4>
-			
-			<h4 id="organizingyourcampaign">Organizing your Campaign</h4>
-			
-			<h2 id="runningagame">Running a game</h2>
-			
-			<h3 id="systemagnostic">System Agnostic</h3>
-			
-			<h3 id="sharinggamecode">Sharing game code</h3>
-			
-			<p>Inviting friends is as easy as sharing a phone number. Just give your friends the STORY CODE from inside any map. They use it to JOIN STORY and share a live map with you and other players. When you move between campaign maps, your players and their tokens will travel with you.</p>
-			
-			<h3 id="realtime">Realtime</h3>
-			
-			<h3 id="savingyoursession">Saving your session</h3>
-			
-			<p>Set up on your laptop and run your session with your tablet. Scene options, tokens, status effects, and visibility are saved with each scene.</p>
-			
-			<h3 id="switchingscenes">Switching Scenes</h3>
-			
-			<p>You can quickly switch between scenes in your story from the scene options menu. Your players come along to the new room.</p>
-			
-			<h3 id="differencesforgmandplayers">Differences for GM and Players</h3>
-			
-			<h2 id="diceroller">Dice Roller</h2>
-			
-			<p>Attach rolls to tokens, add multipliers, and hold a roll to build suspense. Easy to use, expressive dice rolling.</p>
-			
-			<h3 id="dice">Dice</h3>
-			
-			<h3 id="formula">Formula</h3>
-			
-			<h3 id="expressiverolling">Expressive rolling</h3>
-			
-			<p>Hold the roll button in the dice roller to build suspense!</p>
-			
-			</body>
-			</html>
-			
-			
-			</article>
-			<article id="privacy">
-			<!DOCTYPE html>
-			<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-			<head>
-				<meta charset="utf-8"/>
-			</head>
-			<body>
-			
-			<h2 id="analytics">Analytics</h2>
-			
-			<p>Admittedly not the most exciting topic, but we want you to know what we’re tracking and learning, and share what we can.</p>
-			
-			<p>We now know how many folks log on, what devices they’re using, which menus they look at in game, and how long they’re playing. This will help us debug issues with playsets and its UI/UX. It will also help us understand user loads to tweak performance.</p>
-			
-			<p>We are also tracking which maps, features and tokens are the most popular. This isn’t super sophisticated at the moment, just the number of times used, but it is very important for the design and art department.</p>
-			
-			<p>We want to make the popularity metrics public in the future.</p>
-			
-			</body>
-			</html>
-			
-			
-			</article>
-	</section>
+			</header>
+		<h2 id="thejumpinn">The Jump Inn</h2>
+		
+		<p>The main menu is also a map, the Jump Inn! From here you can create a campaign or join a session in progress with a story code shared with you. You can play around and destroy the map, attack the villagers, and get some practice with playsets. The Jump Inn will reset the next time you load it.</p>
+		
+		<blockquote>
+		<p>Tokens you create and save in the Jump Inn are available in the token select menu.</p>
+		</blockquote>
+		
+		<h2 id="tokens">Tokens</h2>
+		
+		<h3 id="tokenbasics">Token Basics</h3>
+		
+		<h4 id="addingandremovingtokens">Adding and Removing tokens</h4>
+		
+		<p>Click and hold anywhere on a map to place a token. You can try this right on the main menu, which is great place to look through tokens or build your own without the need to create a campaign and map.</p>
+		
+		<h4 id="movement">Movement</h4>
+		
+		<p>Tokens leave a ghost behind when moving, allowing you to count squares more easily.</p>
+		
+		<p>Double tapping a token now gives it a wobble so people who aren’t in the same room know exactly which spider is about to leap on their face.</p>
+		
+		<p>If multiple tokens are in the same square you can toggle between them using the LAYER BUTTON.</p>
+		
+		<blockquote>
+		<p>Characters can jump inside of wells using the layer button.</p>
+		</blockquote>
+		
+		<h4 id="emotes">Emotes</h4>
+		
+		<h4 id="statuseffects">Status Effects</h4>
+		
+		<h4 id="actions">Actions</h4>
+		
+		<p>Actions are ongoing effects and animations that you can apply to your tokens. They are accessible in the token menu. Dance, sleep, etc to your token’s heart’s content.</p>
+		
+		<h4 id="notes">Notes</h4>
+		
+		<p>Notes can be seen by all players as a text box above the token. It can also not be seen by all players, if you hide it.</p>
+		
+		<p>Notes will fade behind status effects and will occasionally come to the front for readability.</p>
+		
+		<h4 id="props">Props</h4>
+		
+		<p>Some tokens are special. Those tokens are props. They have a lightbulb which lets you change the state of the prop.</p>
+		
+		<p>You can light campfires and torches by placing fire on top of them.</p>
+		
+		<h4 id="traps">Traps</h4>
+		
+		<p>Traps unhide and activate when tokens are placed on top of them.</p>
+		
+		<h3 id="advancedfeatures">Advanced Features</h3>
+		
+		<h4 id="swapping">Swapping</h4>
+		
+		<p>You can now swap tokens from the advanced token menu (hold down on the token for 2 seconds) Useful for shape shifters or hex spells.</p>
+		
+		<h4 id="editingprops">Editing (Props)</h4>
+		
+		<h4 id="hidingtokens">Hiding Tokens</h4>
+		
+		<p>Tokens can be hidden from other players. This is useful for hiding chests and other surprises good and bad.</p>
+		
+		<p>Tokens placed by the story-teller (including hidden tokens) do not cause transparency (for players). This will allow you to hide chests and place tokens in houses and caves without spoiling the surprise. (or having to unhide every token)</p>
+		
+		<h4 id="favoritingtokens">Favoriting Tokens</h4>
+		
+		<h3 id="tokenbuilder">Token Builder</h3>
+		
+		<p>Sometimes our great premade tokens might not be exactly what you are looking for. Maybe you just want more NPCs who aren’t wielding swords or giant cleavers. Maybe your elf draws his power from his majestic hair, but it MUST be purple or else you lose that +2 modifier on your roll. Whatever your reason, you have the power. You can build your own tokens by selecting from faces, hair, ears, armor, main-hand, off-hands, hats and bases all with a wide pallet of colors. With plans for regular updates to the available styles and equipment prepare to see a wider array of faces in playsets than ever before</p>
+		
+		<h3 id="customarttokens">Custom Art Tokens</h3>
+		
+		<h3 id="tokengrouping">Token Grouping</h3>
+		
+		<p>The grouping tool is a great way to hide and move multiple tokens at once.</p>
+		
+		<h2 id="buildertools">Builder tools</h2>
+		
+		<p>Creating a world map is one of the most rewarding parts of building your own campaign. Playsets will help you make a beautiful map, and you can mark important spots with scaled down representations of all of our pre built maps.</p>
+		
+		<p>We have a suite of BUILDER TOOLS as well as hundreds of props to help you make something amazing in a matter minutes, or hours, or weeks if you love to tinker.</p>
+		
+		<h3 id="roomtool">Room tool</h3>
+		
+		<h4 id="buildingandmodifying">Building and modifying</h4>
+		
+		<h5 id="undoredo">Undo / Redo</h5>
+		
+		<h5 id="lock">Lock</h5>
+		
+		<h5 id="circleandstamptools">Circle and Stamp tools</h5>
+		
+		<h4 id="roofs">Roofs</h4>
+		
+		<p>The roofing tool will automatically recognize new buildings made with the “Room” tool. Look for the pyramid to get started.</p>
+		
+		<h4 id="worldmaps">World Maps</h4>
+		
+		<h3 id="builderprops">Builder Props</h3>
+		
+		<h4 id="addingprops">Adding Props</h4>
+		
+		<h4 id="interactivepropstraps">Interactive Props + Traps</h4>
+		
+		<h2 id="maps">Maps</h2>
+		
+		<h3 id="panningandzooming">Panning and Zooming</h3>
+		
+		<p>You can scroll to zoom in for a better view or out to move around more easily.</p>
+		
+		<h3 id="maphighlighting">Map Highlighting</h3>
+		
+		<p>Double tap to highlight a specific square to your group.</p>
+		
+		<h3 id="weather">Weather</h3>
+		
+		<p>Storytellers can set the weather in the scene during gameplay and can save a weather effect when creating campaigns.</p>
+		
+		<h3 id="levels">Levels</h3>
+		
+		<h4 id="movingbetweenlevels">Moving between levels</h4>
+		
+		<h4 id="buildingonlevels">Building on levels</h4>
+		
+		<h4 id="levelbackgrounds">Level backgrounds</h4>
+		
+		<h4 id="levelsingameplay">Levels in game play</h4>
+		
+		<h2 id="creatingacampaign">Creating a campaign</h2>
+		
+		<h3 id="campaignview">Campaign View</h3>
+		
+		<p>The CAMPAIGN VIEW is where you manage and access the many maps associated with a campaign. You can have an unlimited number of campaigns, and as many maps as you can fit in the campaign view. When you are inside of a map you can switch to other maps in the campaign from the SCENE OPTIONS MENU.</p>
+		
+		<h4 id="addingandremovingmaps">Adding and Removing Maps</h4>
+		
+		<h4 id="organizingyourcampaign">Organizing your Campaign</h4>
+		
+		<h2 id="runningagame">Running a game</h2>
+		
+		<h3 id="systemagnostic">System Agnostic</h3>
+		
+		<h3 id="sharinggamecode">Sharing game code</h3>
+		
+		<p>Inviting friends is as easy as sharing a phone number. Just give your friends the STORY CODE from inside any map. They use it to JOIN STORY and share a live map with you and other players. When you move between campaign maps, your players and their tokens will travel with you.</p>
+		
+		<h3 id="realtime">Realtime</h3>
+		
+		<h3 id="savingyoursession">Saving your session</h3>
+		
+		<p>Set up on your laptop and run your session with your tablet. Scene options, tokens, status effects, and visibility are saved with each scene.</p>
+		
+		<h3 id="switchingscenes">Switching Scenes</h3>
+		
+		<p>You can quickly switch between scenes in your story from the scene options menu. Your players come along to the new room.</p>
+		
+		<h3 id="differencesforgmandplayers">Differences for GM and Players</h3>
+		
+		<h2 id="diceroller">Dice Roller</h2>
+		
+		<p>Attach rolls to tokens, add multipliers, and hold a roll to build suspense. Easy to use, expressive dice rolling.</p>
+		
+		<h3 id="dice">Dice</h3>
+		
+		<h3 id="formula">Formula</h3>
+		
+		<h3 id="expressiverolling">Expressive rolling</h3>
+		
+		<p>Hold the roll button in the dice roller to build suspense!</p>
+		
+		</section>
+		<section id="privacy">
+			<header>
+				<a href="#analytics">Analytics</a>
+			</header>
+		<h2 id="analytics">Analytics</h2>
+		
+		<p>Admittedly not the most exciting topic, but we want you to know what we’re tracking and learning, and share what we can.</p>
+		
+		<p>We now know how many folks log on, what devices they’re using, which menus they look at in game, and how long they’re playing. This will help us debug issues with playsets and its UI/UX. It will also help us understand user loads to tweak performance.</p>
+		
+		<p>We are also tracking which maps, features and tokens are the most popular. This isn’t super sophisticated at the moment, just the number of times used, but it is very important for the design and art department.</p>
+		
+		<p>We want to make the popularity metrics public in the future.</p>
+		
+		</section>
 </body>
 </html>

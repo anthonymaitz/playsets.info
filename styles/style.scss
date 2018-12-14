@@ -94,15 +94,18 @@ h1, h2, h3, h4, h5, ol, ul, dd, dt, dl, li, blockquote
 body
 {
 	font-family: 'Libre Caslon Text', serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
 
+	display: block;
+
 	margin: 0;
 
 	color: $black;
-	background: linear-gradient(to right, rgba(255,255,255,.5), rgba(255,255,255,.9) 2em,rgba(255,255,255,.9) 37.5em,rgba(255,255,255,.8) 45em), $backgroundURL;
+	// background: linear-gradient(to right, rgba(255,255,255,.5), rgba(255,255,255,.9) 2em,rgba(255,255,255,.9) 37.5em,rgba(255,255,255,.8) 45em), $backgroundURL;
+	background: white;
 
 	-webkit-font-smoothing: antialiased;
 	font-display: optional;
@@ -124,32 +127,41 @@ a
 	}
 }
 
-header
-{
-	position: sticky;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	left: 0;
-
-	border-bottom: solid 1px #dddddd;
-	background: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.95) 2.25em,rgba(255,255,255,.95) 37.5em,rgba(255,255,255,.7) 45em);
-
-	padding-left: 1em;
-	padding-right: 1em;
-
-	a
+label
 	{
 		font-size: 1em;
-		line-height: 2em;
+		line-height: 3em;
 		display: inline-block;
 		margin: 0 .5em;
+		cursor: pointer;
+		user-select: none;
+		background: white;
 	}
-}
 
+// header
+// {
+// 	position: sticky;
+// 	z-index: 1;
+// 	top: 0;
+// 	right: 0;
+// 	left: 0;
+
+// 	border-bottom: solid 1px #dddddd;
+// 	background: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.95) 2.25em,rgba(255,255,255,.95) 37.5em,rgba(255,255,255,.7) 45em);
+
+// 	padding-left: 1em;
+// 	padding-right: 1em;
+
+
+// }
+
+
+#whatsnew,
 #documentation,
 #privacy
 {
+	display:none;
+
 	margin-left: 1em;
 	margin-right: 1em;
 
@@ -167,10 +179,26 @@ header
 	{
 	  display: block;
 	  content: " ";
-	  margin-top: -5em;
-	  height: 5em;
+	  margin-top: -3em;
+	  height: 3em;
 	  visibility: hidden;
 	  pointer-events: none;
 	}
 
+}
+
+input {
+   display:none;
+}
+
+input#whatsnewnav:checked ~ section#whatsnew {
+  display:block;
+}
+
+input#documentationnav:checked ~ section#documentation {
+  display:block;
+}
+
+input#privacynav:checked ~ section#privacy {
+  display:block;
 }

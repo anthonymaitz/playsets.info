@@ -60,13 +60,14 @@ h1, h2, h3, h4, h5, ol, ul, dd, dt, dl, li, blockquote {
 
 body {
   font-family: 'Libre Caslon Text', serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  display: block;
   margin: 0;
   color: #4b5866;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9) 2em, rgba(255, 255, 255, 0.9) 37.5em, rgba(255, 255, 255, 0.8) 45em), url("images/seamless_paper_texture.png");
+  background: white;
   -webkit-font-smoothing: antialiased;
   font-display: optional;
   text-rendering: optimizeLegibility;
@@ -79,40 +80,53 @@ a {
     text-decoration: underline;
     color: #7eb5e5; }
 
-header {
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
-  border-bottom: solid 1px #dddddd;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95) 2.25em, rgba(255, 255, 255, 0.95) 37.5em, rgba(255, 255, 255, 0.7) 45em);
-  padding-left: 1em;
-  padding-right: 1em; }
-  header a {
-    font-size: 1em;
-    line-height: 2em;
-    display: inline-block;
-    margin: 0 .5em; }
+label {
+  font-size: 1em;
+  line-height: 3em;
+  display: inline-block;
+  margin: 0 .5em;
+  cursor: pointer;
+  user-select: none;
+  background: white; }
 
+#whatsnew,
 #documentation,
 #privacy {
+  display: none;
   margin-left: 1em;
   margin-right: 1em; }
-  #documentation h2, #documentation h3, #documentation h4, #documentation h5,
+  #whatsnew h2, #whatsnew h3, #whatsnew h4, #whatsnew h5,
+  #documentation h2,
+  #documentation h3,
+  #documentation h4,
+  #documentation h5,
   #privacy h2,
   #privacy h3,
   #privacy h4,
   #privacy h5 {
     margin-top: 2em; }
+  #whatsnew:first-child,
   #documentation:first-child,
   #privacy:first-child {
     margin-top: -2em; }
+  #whatsnew h2::before,
   #documentation h2::before,
   #privacy h2::before {
     display: block;
     content: " ";
-    margin-top: -5em;
-    height: 5em;
+    margin-top: -3em;
+    height: 3em;
     visibility: hidden;
     pointer-events: none; }
+
+input {
+  display: none; }
+
+input#whatsnewnav:checked ~ section#whatsnew {
+  display: block; }
+
+input#documentationnav:checked ~ section#documentation {
+  display: block; }
+
+input#privacynav:checked ~ section#privacy {
+  display: block; }
