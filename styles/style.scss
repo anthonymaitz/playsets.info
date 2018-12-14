@@ -105,7 +105,7 @@ body
 
 	color: $black;
 	// background: linear-gradient(to right, rgba(255,255,255,.5), rgba(255,255,255,.9) 2em,rgba(255,255,255,.9) 37.5em,rgba(255,255,255,.8) 45em), $backgroundURL;
-	background: white;
+	background-color: transparent;
 
 	-webkit-font-smoothing: antialiased;
 	font-display: optional;
@@ -138,49 +138,63 @@ label
 		background: white;
 	}
 
-// header
-// {
-// 	position: sticky;
-// 	z-index: 1;
-// 	top: 0;
-// 	right: 0;
-// 	left: 0;
+	label[for=whatsnewnav]
+	{
+		position: fixed;
+		top: 1em;
+		left: 1em;
+	}
 
-// 	border-bottom: solid 1px #dddddd;
-// 	background: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.95) 2.25em,rgba(255,255,255,.95) 37.5em,rgba(255,255,255,.7) 45em);
-
-// 	padding-left: 1em;
-// 	padding-right: 1em;
-
-
-// }
-
+	label[for=documentationnav]
+	{
+		position: fixed;
+		top: 1em;
+		left: 8em;
+	}
 
 #whatsnew,
-#documentation,
-#privacy
+#documentation
 {
 	display:none;
 
 	margin-left: 1em;
 	margin-right: 1em;
+	background: white;
+
+	position: absolute;
+	top: 5em;
+	bottom: 1em;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+
+
+	header
+	{
+		position: sticky;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-color:white;
+
+		a
+		{
+			display: block;
+		}
+	}
 
 	h2, h3, h4, h5
 	{
 		margin-top: 2em;
 	}
 
-	&:first-child
-	{
-		margin-top: -2em;
-	}
-
 	h2::before
 	{
 	  display: block;
 	  content: " ";
-	  margin-top: -3em;
-	  height: 3em;
+	  margin-top: -7em;
+	  height: 7em;
 	  visibility: hidden;
 	  pointer-events: none;
 	}
@@ -196,9 +210,5 @@ input#whatsnewnav:checked ~ section#whatsnew {
 }
 
 input#documentationnav:checked ~ section#documentation {
-  display:block;
-}
-
-input#privacynav:checked ~ section#privacy {
   display:block;
 }

@@ -67,7 +67,7 @@ body {
   display: block;
   margin: 0;
   color: #4b5866;
-  background: white;
+  background-color: transparent;
   -webkit-font-smoothing: antialiased;
   font-display: optional;
   text-rendering: optimizeLegibility;
@@ -89,33 +89,51 @@ label {
   user-select: none;
   background: white; }
 
+label[for=whatsnewnav] {
+  position: fixed;
+  top: 1em;
+  left: 1em; }
+
+label[for=documentationnav] {
+  position: fixed;
+  top: 1em;
+  left: 8em; }
+
 #whatsnew,
-#documentation,
-#privacy {
+#documentation {
   display: none;
   margin-left: 1em;
-  margin-right: 1em; }
+  margin-right: 1em;
+  background: white;
+  position: absolute;
+  top: 5em;
+  bottom: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth; }
+  #whatsnew header,
+  #documentation header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white; }
+    #whatsnew header a,
+    #documentation header a {
+      display: block; }
   #whatsnew h2, #whatsnew h3, #whatsnew h4, #whatsnew h5,
   #documentation h2,
   #documentation h3,
   #documentation h4,
-  #documentation h5,
-  #privacy h2,
-  #privacy h3,
-  #privacy h4,
-  #privacy h5 {
+  #documentation h5 {
     margin-top: 2em; }
-  #whatsnew:first-child,
-  #documentation:first-child,
-  #privacy:first-child {
-    margin-top: -2em; }
   #whatsnew h2::before,
-  #documentation h2::before,
-  #privacy h2::before {
+  #documentation h2::before {
     display: block;
     content: " ";
-    margin-top: -3em;
-    height: 3em;
+    margin-top: -7em;
+    height: 7em;
     visibility: hidden;
     pointer-events: none; }
 
@@ -126,7 +144,4 @@ input#whatsnewnav:checked ~ section#whatsnew {
   display: block; }
 
 input#documentationnav:checked ~ section#documentation {
-  display: block; }
-
-input#privacynav:checked ~ section#privacy {
   display: block; }
