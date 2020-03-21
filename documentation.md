@@ -1,7 +1,7 @@
 ## The Jump Inn
 The main menu is also a map, the Jump Inn!  From here you can create a campaign or join a session in progress with a story code shared with you.  You can play around and destroy the map, attack the villagers, and get some practice with playsets. The Jump Inn will reset the next time you load it.
 
-> Tokens you create and save in the Jump Inn are available in the token select menu.
+> Tokens you create and save in the Jump Inn (using the [Token Builder](#tokenbuilder)) are available in the token select menu.
 
 ## Tokens
 ### Token Basics
@@ -46,7 +46,7 @@ Tokens can be hidden from other players.  This is useful for hiding chests and o
 Tokens placed by the story-teller (including hidden tokens) do not cause transparency (for players).  This will allow you to hide chests and place tokens in houses and caves without spoiling the surprise.  (or having to unhide every token)
 
 #### Favoriting Tokens
-
+Marking a token as a favorite, by toggling the start beneath the token in the token select menu, moves a copy of the token to the front of the token selection menu. Your saved custom tokens are placed with your favorites automatically.
 
 ### Token Builder
 Sometimes our great premade tokens might not be exactly what you are looking for. Maybe you just want more NPCs who aren’t wielding swords or giant cleavers. Maybe your elf draws his power from his majestic hair, but it MUST be purple or else you lose that +2 modifier on your roll.  Whatever your reason, you have the power.  You can build your own tokens by selecting from faces, hair, ears, armor, main-hand, off-hands, hats and bases all with a wide pallet of colors.  With plans for regular updates to the available styles and equipment prepare to see a wider array of faces in playsets than ever before
@@ -54,8 +54,7 @@ Sometimes our great premade tokens might not be exactly what you are looking for
 ### Custom Art Tokens
 
 ### Token Grouping
-The grouping tool is a great way to hide and move multiple tokens at once. 
-
+The grouping tool is a great way to hide and move multiple tokens at once.
 
 ## Builder tools
 Creating a world map is one of the most rewarding parts of building your own campaign.  Playsets will help you make a beautiful map, and you can mark important spots with scaled down representations of all of our pre built maps.
@@ -79,13 +78,15 @@ The roofing tool will automatically recognize new buildings made with the “Roo
 
 ## Maps
 ### Panning and Zooming
+Click anywhere on a map and drag to move your view. You can also move around the map by dragging a token towards the edge.
+
 You can scroll to zoom in for a better view or out to move around more easily.
 
 ### Map Highlighting
 Double tap to highlight a specific square to your group.
 
 ### Weather
-Storytellers can set the weather in the scene during gameplay and can save a weather effect when creating campaigns.
+Storytellers can set the weather in the scene during gameplay and can save a weather effect as a default when creating campaigns.
 
 ### Levels
 #### Moving between levels
@@ -124,7 +125,7 @@ Hold the roll button in the dice roller to build suspense!
 
 ## Privacy
 
-### Analytics 
+### Analytics
 Admittedly not the most exciting topic, but we want you to know what we’re tracking and learning, and share what we can.
 
 We now know how many folks log on, what devices they’re using, which menus they look at in game, and how long they’re playing. This will help us debug issues with playsets and its UI/UX. It will also help us understand user loads to tweak performance.
