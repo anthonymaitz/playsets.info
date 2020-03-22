@@ -167,9 +167,6 @@ body {
 header {
   position: absolute;
   z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   display: block;
   padding: 1rem 2.5rem; }
@@ -187,9 +184,9 @@ header {
   overflow-y: scroll;
   scroll-behavior: smooth;
   margin-top: 25rem;
-  padding-left: 5rem; }
+  padding: 5rem; }
   #documentation * {
-    max-width: 38em; }
+    width: 38em; }
   #documentation h2, #documentation h3, #documentation h4, #documentation h5 {
     margin-top: 1em; }
   #documentation h2::before {

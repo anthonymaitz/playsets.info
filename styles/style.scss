@@ -182,9 +182,6 @@ label, legend, fieldset {
 	{
 		position: absolute;
 		z-index: 1;
-		top: 0;
-		right: 0;
-    left: 0;
     background-color: rgba(255,255,255,.8);
     display:block;
     padding: 1rem 2.5rem;
@@ -207,11 +204,11 @@ label, legend, fieldset {
 	overflow-y: scroll;
 	scroll-behavior: smooth;
   margin-top: 25rem;
-  padding-left: 5rem;
+  padding: 5rem;
 
   *
   {
-    max-width: 38em;
+    width: 38em;
   }
 
 	h2, h3, h4, h5
