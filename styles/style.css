@@ -4,22 +4,6 @@
  * Project: https://github.com/oxalorg/sakura
  */
 /* Body */
-html {
-  font-size: 62.5%;
-  font-family: serif;
-  background-image: url("images/dotgrid.jpg"); }
-
-body {
-  font-size: 1.8rem;
-  line-height: 1.618;
-  max-width: 38em;
-  margin: auto;
-  color: #4a4a4a;
-  background-color: #f9f9f9;
-  padding: 13px;
-  font-family: "Libre Caslon Text", serif;
-  font-weight: 700; }
-
 @media (max-width: 684px) {
   body {
     font-size: 1.53rem; } }
@@ -167,6 +151,32 @@ label, legend, fieldset {
   margin-bottom: .5rem;
   font-weight: 600; }
 
+html {
+  font-size: 62.5%;
+  font-family: serif;
+  background-image: url("images/dotgrid.jpg"); }
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  margin: auto;
+  color: #4a4a4a;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400; }
+
+header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 1rem 2.5rem; }
+  header a {
+    display: block;
+    line-height: 1.75em; }
+
 #documentation {
   position: absolute;
   top: 0;
@@ -175,23 +185,17 @@ label, legend, fieldset {
   left: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-behavior: smooth; }
-  #documentation header {
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.8); }
-    #documentation header a {
-      display: block;
-      line-height: 1.5em; }
+  scroll-behavior: smooth;
+  margin-top: 25rem;
+  padding-left: 5rem; }
+  #documentation * {
+    max-width: 38em; }
   #documentation h2, #documentation h3, #documentation h4, #documentation h5 {
     margin-top: 1em; }
   #documentation h2::before {
     display: block;
     content: " ";
-    margin-top: -6em;
-    height: 6em;
+    margin-top: -3em;
+    height: 5em;
     visibility: hidden;
     pointer-events: none; }
