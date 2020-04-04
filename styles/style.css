@@ -1,9 +1,4 @@
-/* Sakura.css v1.0.0
- * ================
- * Minimal css theme.
- * Project: https://github.com/oxalorg/sakura
- */
-/* Body */
+@charset "UTF-8";
 @media (max-width: 684px) {
   body {
     font-size: 1.53rem; } }
@@ -12,187 +7,95 @@
   body {
     font-size: 1.35rem; } }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  -ms-word-break: break-all;
   word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
   hyphens: auto; }
 
-h1 {
-  font-size: 2.35em; }
+h1, h2, h3 {
+  font-family: 'quatro-slab', serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.20;
+  opacity: 1.00;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  word-spacing: -.20px;
+  text-transform: none; }
 
 h2 {
-  font-size: 2.00em; }
+  font-size: 26px; }
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 24px; }
 
-h4 {
-  font-size: 1.5em; }
+h4, h5, h6 {
+  font-family: 'quatro-slab', serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.20;
+  opacity: 1.00;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  letter-spacing: -0.72px;
+  word-spacing: 0.00px;
+  text-transform: none; }
 
-h5 {
-  font-size: 1.25em; }
+h4, h5, h6 {
+  font-size: 20px; }
 
-h6 {
-  font-size: 1em; }
-
-small, sub, sup {
-  font-size: 75%; }
-
-hr {
-  border-color: #2c8898; }
-
-a {
-  text-decoration: none;
-  color: #2c8898; }
-
-ul {
-  padding-left: 1.4em; }
-
-li {
-  margin-bottom: 0.4em; }
+p {
+  font-family: 'quatro-slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.60;
+  opacity: 1;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  letter-spacing: -0.30px;
+  word-spacing: -0.10px;
+  text-transform: none; }
 
 blockquote {
-  font-weight: 400;
-  font-style: italic;
-  margin-left: 1.5em;
-  padding-left: 1em;
-  border-left: 3px solid #2c8898; }
-
-img {
-  max-width: 100%; }
-
-/* Pre and Code */
-pre {
-  background-color: #f1f1f1;
-  display: block;
-  padding: 1em;
-  overflow-x: auto; }
-
-code {
-  font-size: 0.9em;
-  padding: 0 0.5em;
-  background-color: #f1f1f1;
-  white-space: pre-wrap; }
-
-pre > code {
-  padding: 0;
-  background-color: transparent;
-  white-space: pre; }
-
-/* Tables */
-table {
-  text-align: justify;
-  width: 100%;
-  border-collapse: collapse; }
-
-td, th {
-  padding: 0.5em;
-  border-bottom: 1px solid #f1f1f1; }
-
-/* Buttons, forms and input */
-input, textarea {
-  border: 1px solid #4a4a4a; }
-
-input:focus, textarea:focus {
-  border: 1px solid #2c8898; }
-
-textarea {
-  width: 100%; }
-
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
-  display: inline-block;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: #2c8898;
-  color: #f9f9f9;
-  border-radius: 1px;
-  border: 1px solid #2c8898;
-  cursor: pointer;
-  box-sizing: border-box; }
-
-.button[disabled], button[disabled], input[type="submit"][disabled], input[type="reset"][disabled], input[type="button"][disabled] {
-  cursor: default;
-  opacity: .5; }
-
-.button:focus, .button:hover, button:focus, button:hover, input[type="submit"]:focus, input[type="submit"]:hover, input[type="reset"]:focus, input[type="reset"]:hover, input[type="button"]:focus, input[type="button"]:hover {
-  background-color: #982c61;
-  border-color: #982c61;
-  color: #f9f9f9;
-  outline: 0; }
-
-textarea, select, input[type] {
-  color: #4a4a4a;
-  padding: 6px 10px;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
-  margin-bottom: 10px;
-  background-color: #f1f1f1;
-  border: 1px solid #f1f1f1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
-
-textarea:focus, select:focus, input[type]:focus {
-  border: 1px solid #2c8898;
-  outline: 0; }
-
-input[type="checkbox"]:focus {
-  outline: 1px dotted #2c8898; }
-
-label, legend, fieldset {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 600; }
+  margin-left: 10px; }
+  blockquote p {
+    font-family: "Rock Salt", handwriting;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.60;
+    opacity: .80;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    letter-spacing: 0.40px;
+    word-spacing: 1.00px;
+    text-transform: none;
+    transform: rotate(-0.5deg); }
+    blockquote p::before {
+      content: "— "; }
 
 html {
-  font-size: 62.5%;
-  font-family: serif;
   background-image: url("images/dotgrid.jpg"); }
 
 body {
-  font-size: 1.8rem;
+  font-size: 18px;
   line-height: 1.618;
-  margin: auto;
   color: #4a4a4a;
-  font-family: "Libre Caslon Text", serif;
+  font-family: 'quatro-slab', serif;
   font-weight: 400; }
 
-header {
-  position: absolute;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: block;
-  padding: 1rem 2.5rem; }
-  header a {
-    display: block;
-    line-height: 1.75em; }
+nav {
+  margin-bottom: 15px; }
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px; }
 
-#documentation {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  margin-top: 25rem;
-  padding: 5rem; }
-  #documentation * {
-    width: 38em; }
-  #documentation h2, #documentation h3, #documentation h4, #documentation h5 {
-    margin-top: 1em; }
-  #documentation h2::before {
-    display: block;
-    content: " ";
-    margin-top: -3em;
-    height: 5em;
-    visibility: hidden;
-    pointer-events: none; }
+main section {
+  max-width: 38em; }
